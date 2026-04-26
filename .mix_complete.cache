@@ -28,6 +28,11 @@ escript.install	Installs an escript locally
 escript.uninstall	Uninstalls escripts
 eval	Evaluates the given code
 format	Formats the given files/patterns
+git_ops.check_message	Check if a file's content follows the Conventional Commits spec
+git_ops.install	Installs GitOps into a project.
+git_ops.message_hook	Enables automatic check if git commit message follows Conventional Commits spec
+git_ops.project_info	Return information about the project.
+git_ops.release	Parses the commit log and writes any updates to the changelog
 help	Prints help information for tasks, aliases, modules, and applications
 hex	Prints Hex help information
 hex.audit	Shows retired Hex deps for the current project
@@ -47,11 +52,18 @@ hex.search	Open and perform searches
 hex.sponsor	Show Hex packages accepting sponsorships
 hex.user	Manages your Hex user account
 igniter.add	Adds the provided deps to `mix.exs`
+igniter.add_extension	Adds an extension to your `.igniter.exs` configuration file.
 igniter.apply_upgrades	Applies the upgrade scripts for the list of package version changes provided.
+igniter.gen.task	Generates a new igniter task
 igniter.init_library	Set up a library to use Igniter. Adds the optional dependency and an install task.
 igniter.install	Install a package or packages, and run any associated installers.
+igniter.move_files	Moves any relevant files to their 'correct' location.
 igniter.new	Creates a new Igniter application
+igniter.refactor.rename_function	Rename functions across a project with automatic reference updates.
+igniter.refactor.unless_to_if_not	Rewrites occurrences of `unless x` to `if !x` across the project.
 igniter.remove	Removes the provided deps from `mix.exs`
+igniter.setup	Creates or updates a .igniter.exs file, used to configure Igniter for end user's preferences.
+igniter.update_gettext	Applies changes to resolve a warning introduced in gettext 0.26.0
 igniter.upgrade	Fetch and upgrade dependencies. A drop in replacement for `mix deps.update` that also runs upgrade tasks.
 loadconfig	Loads and persists the given configuration
 local	Lists tasks installed locally via archives
@@ -60,6 +72,7 @@ local.igniter	Updates the Igniter project generator locally
 local.phx	Updates the Phoenix project generator locally
 local.rebar	Installs Rebar locally
 new	Creates a new Elixir project
+nimble_parsec.compile	Compiles a parser and injects its content into the parser file
 phx.new	Creates a new Phoenix v1.8.5 application
 phx.new.ecto	Creates a new Ecto project within an umbrella project
 phx.new.web	Creates a new Phoenix web project within an umbrella project
