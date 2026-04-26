@@ -16,7 +16,7 @@ Add `phoenix_ssg` to your deps:
 ```elixir
 def deps do
   [
-    {:phoenix_ssg, "~> 0.0.1"}
+    {:phoenix_ssg, "~> 0.0.2"}
   ]
 end
 ```
